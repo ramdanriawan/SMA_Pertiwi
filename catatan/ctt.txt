@@ -1,0 +1,17 @@
+- tb_pengunjung, tb_daftar_buku dk tau untuk ap (dak berguna emang) //
+- siswa bisa daftar (dak jadi karena admin udah langsung input username dan password) //
+- lihat quiz hanya untuk yang ada saja //
+- materi jg tombolny harusny ilangin //
+- validasi upload gambar // 
+- auto naik kelas //
+- edit kelas siswa menjadi 12 ipa/ips //
+- menambah show entri//
+- menyatukan login siswa dengan guru //
+- daftar topik quiz / tugas di ganti daftar tugas / quiz, tambah topik > tambah tugas/ quiz //
+- dimenu detail kasih tombol satu lagi // (gak jadi)
+- username siswa/pengajar gak boleh sama //
+- gak bisa nambah tugas / quiz //
+- dibuat soal validasi untuk gambarnya //
+- diberanda tambah apa gitu supaya gak login kosong bae //
+- validasi input file di tambah materi //
+- tombol lihat / download di materi (login siswa) jadi tulisan download aja //
