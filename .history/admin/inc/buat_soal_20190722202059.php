@@ -166,7 +166,7 @@ if(@$_GET['hal'] == "soalpilgan") { ?>
 			            		// echo $id_tq_kls."+".$data_tq_kls['id_kelas'];
 
 			            		move_uploaded_file($sumber, $target.$nama_gambar);
-			                    mysqli_query($db, "INSERT INTO tb_soal_pilgan VALUES(null, '$id_tq_kls', '$pertanyaan', '$nama_gambar', '$pilA', '$pilB', '$pilC', '$pilD', '$pilE', '$kunci', now())") or die ($db->error);          
+			                    mysqli_query($db, "INSERT INTO tb_soal_pilgan VALUES('', '$id_tq_kls', '$pertanyaan', '$nama_gambar', '$pilA', '$pilB', '$pilC', '$pilD', '$pilE', '$kunci', now())") or die ($db->error);          
 			                    echo '<script>window.location="?page=quiz&action=daftarsoal&hal=pilgan&id='.$id.'"</script>';
 			            	}
 						}
@@ -174,7 +174,7 @@ if(@$_GET['hal'] == "soalpilgan") { ?>
 		        	// print_r($b);
 
                     move_uploaded_file($sumber, $target.$nama_gambar);
-                    mysqli_query($db, "INSERT INTO tb_soal_pilgan VALUES(null, '$id', '$pertanyaan', '$nama_gambar', '$pilA', '$pilB', '$pilC', '$pilD', '$pilE', '$kunci', now())") or die ($db->error);          
+                    mysqli_query($db, "INSERT INTO tb_soal_pilgan VALUES('', '$id', '$pertanyaan', '$nama_gambar', '$pilA', '$pilB', '$pilC', '$pilD', '$pilE', '$kunci', now())") or die ($db->error);          
                     echo '<script>window.location="?page=quiz&action=daftarsoal&hal=pilgan&id='.$id.'"</script>';
 	            } ?>
 		    </div>
@@ -230,13 +230,13 @@ if(@$_GET['hal'] == "soalpilgan") { ?>
 			            		$id_tq_kls2 = $data_tq_kls2['id_tq'];
 
 			            		move_uploaded_file($sumber, $target.$nama_gambar);
-			                    mysqli_query($db, "INSERT INTO tb_soal_essay VALUES(null, '$id_tq_kls2', '$pertanyaan', '$nama_gambar', now())") or die ($db->error);
+			                    mysqli_query($db, "INSERT INTO tb_soal_essay VALUES('', '$id_tq_kls2', '$pertanyaan', '$nama_gambar', now())") or die ($db->error);
 			            	}
 						}
 		        	}
 
                     move_uploaded_file($sumber, $target.$nama_gambar);
-                    mysqli_query($db, "INSERT INTO tb_soal_essay VALUES(null, '$id', '$pertanyaan', '$nama_gambar', now())") or die ($db->error);          
+                    mysqli_query($db, "INSERT INTO tb_soal_essay VALUES('', '$id', '$pertanyaan', '$nama_gambar', now())") or die ($db->error);          
                     echo '<script>window.location="?page=quiz&action=daftarsoal&hal=essay&id='.$id.'"</script>';
 	            }
 	            ?>

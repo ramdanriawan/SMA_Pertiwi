@@ -11,6 +11,6 @@ $info = @mysqli_real_escape_string($db, $_POST['info']);
 $status = @mysqli_real_escape_string($db, $_POST['status']);
 
 // echo $pembuat."+".$judul."+".$kelas."+".$mapel."+".$tgl_buat."+".$waktu_soal."+".$info."+".$status;
-mysqli_query($db, "INSERT INTO tb_topik_quiz VALUES(null, '$judul', '$kelas', '$mapel', '$tgl_buat', '$pembuat', '$waktu_soal', '$info', '$status')") or die ($db->error);
+mysqli_query($db, "INSERT INTO tb_topik_quiz VALUES('', '$judul', '$kelas', '$mapel', '$tgl_buat', '$pembuat', '$waktu_soal', '$info', '$status')") or die ($db->error);
 echo "<script>window.location='?page=quiz';</script>";
 ?>

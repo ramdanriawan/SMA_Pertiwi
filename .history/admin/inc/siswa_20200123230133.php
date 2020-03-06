@@ -277,13 +277,13 @@ for ($i = 2020; $i >= 2000; $i--) {
 
     if ($nama_gambar != '') {
         if (move_uploaded_file($sumber, $target . $nama_gambar)) {
-            mysqli_query($db, "INSERT INTO tb_siswa VALUES(null, '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$nama_ayah', '$nama_ibu', '$no_telp', '$email', '$alamat', '$kelas', '$thn_masuk', '$nama_gambar', '$username', md5('$password'), '$password','$status')") or die($db->error);
+            mysqli_query($db, "INSERT INTO tb_siswa VALUES('', '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$nama_ayah', '$nama_ibu', '$no_telp', '$email', '$alamat', '$kelas', '$thn_masuk', '$nama_gambar', '$username', md5('$password'), '$password','$status')") or die($db->error);
             echo '<script>window.location="?page=siswa";</script>';
         } else {
             echo '<script>alert("Gagal menambah data siswa, foto gagal diupload, coba lagi!"); window.location="?page=siswa";</script>';
         }
     } else {
-        mysqli_query($db, "INSERT INTO tb_siswa VALUES(null, '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$nama_ayah', '$nama_ibu', '$no_telp', '$email', '$alamat', '$kelas', '$thn_masuk', '$nama_gambar', '$username', md5('$password'), '$password', '$status')") or die($db->error);
+        mysqli_query($db, "INSERT INTO tb_siswa VALUES('', '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$nama_ayah', '$nama_ibu', '$no_telp', '$email', '$alamat', '$kelas', '$thn_masuk', '$nama_gambar', '$username', md5('$password'), '$password', '$status')") or die($db->error);
         echo '<script>window.location="?page=siswa";</script>';
     }
     ?>
