@@ -1,6 +1,6 @@
 <?php
 // die(md5('ramdan'));
-$db = mysqli_connect("localhost", "id12825935_db_elearning", "db_elearning", "id12825935_db_elearning");
+$db = mysqli_connect("localhost", "root", "", "db_elearning");
 
 //---fungsi2---//
 function cek_session($isi_siswa)

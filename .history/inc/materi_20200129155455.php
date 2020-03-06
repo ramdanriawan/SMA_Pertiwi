@@ -12,8 +12,7 @@
             <div class="header">
 
 <?php
-$db = mysqli_connect("localhost", "id12825935_db_elearning", "db_elearning", "id12825935_db_elearning");
-
+$db = mysqli_connect("localhost", "root", "", "db_elearning");
 if (@$_GET['action'] == '') {?>
 	<div class="row">
 	    <div class="col-md-12">
